@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html ng-app="root">
   <head>
+    <meta charset="utf-8" />
     <title>Force of Hell Drinking Game | By Caffeinewriter</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
+    <h1>ForceOfHell775 Drinking Game</h1>
     <div class="game" ng-controller="game">
       <ul>
         <li ng-repeat="game in games">
@@ -15,7 +18,7 @@
         </li>
       </ul>
       <div class="inputs">
-        Shots: <input type="number" ng-model="tempShots" class="shots" /> Name: <input type="text" ng-model="tempGame" ng-enter="pushGame()" class="name" />
+        <label for="shots">Shots: </label><input name="shots" type="number" ng-model="tempShots" class="shots" /> <label for="name">Name: </label><input type="text" ng-model="tempGame" ng-enter="pushGame()" name="name" class="name" />
       </div>
       <table>
         <tr>
@@ -28,6 +31,7 @@
         </tr>
       </table>
       <button ng-click="loadDefaults()">Load Defaults</button>
+      <p class="disclaimer">This drinking game can be played with either alcoholic, or non-alcoholic drinks. Please remember to drink responsibly.</p>
     </div>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
