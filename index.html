@@ -13,6 +13,7 @@
         <li ng-repeat="game in games track by $index">
           <strong class="count">x{{game.count}}</strong>
           {{numShots($index)}}: {{game.name}}
+          <button ng-click="decGame($index)">-1</button>
           <button ng-click="incGame($index)">+1</button>
           <button ng-click="deleteGame($index)">x</a>
         </li>

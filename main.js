@@ -28,6 +28,9 @@ angular.module('root', [])
   $scope.incGame = function (index) {
     $scope.games[index].count++;
   };
+  $scope.decGame = function (index) {
+    $scope.games[index].count--;
+  };
   $scope.deleteGame = function (index) {
     $scope.games.splice(index, 1);
   }
