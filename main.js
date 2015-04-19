@@ -53,7 +53,7 @@ angular.module('root', [])
     {"shots":1,"count":0,"name":"Every time Force mispronounces a word"},
     {"shots":1,"count":0,"name":"Every time something gets fucked up on OBS"},
     {"shots":1,"count":0,"name":"Every time TheRedCoyote professes his love for Hunter"},
-    {"shots":1,"count":0,"name":"Every time Force is disrespectful on stream"}
+    {"shots":1,"count":0,"name":"Every time Force is disrespectful on stream"},
     {"shots":2,"count":0,"name":"Every time someone comes in just to troll"},
     {"shots":2,"count":0,"name":"Every time Force says strem"},
     {"shots":2,"count":0,"name":"Every time someone follows"},
