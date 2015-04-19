@@ -10,7 +10,7 @@
     <h1>ForceOfHell775 Drinking Game</h1>
     <div class="game" ng-controller="game">
       <ul>
-        <li ng-repeat="game in games">
+        <li ng-repeat="game in games track by $index">
           <strong class="count">x{{game.count}}</strong>
           {{numShots($index)}}: {{game.name}}
           <button ng-click="incGame($index)">+1</button>
