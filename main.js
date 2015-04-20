@@ -29,7 +29,7 @@ angular.module('root', [])
     $scope.games[index].count++;
   };
   $scope.decGame = function (index) {
-    $scope.games[index].count--;
+    ($scope.games[index].count - 1) > -1 ? $scope.games[index].count-- : $scope.games[index].count = 0;
   };
   $scope.deleteGame = function (index) {
     $scope.games.splice(index, 1);
