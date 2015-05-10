@@ -52,7 +52,7 @@ angular.module('root', [])
     return (($scope.games[index].shots === 1) ? $scope.games[index].shots + ' shot' : $scope.games[index].shots + ' shots');
   }
   $scope.loadDefaults = function () {
-    var defaults = [{"shots":1,"count":0,"name":"Every time Nightbot times somebody out","$$hashKey":"object:6"},
+    var defaults = [{"shots":1,"count":0,"name":"Every time Strembot times somebody out","$$hashKey":"object:6"},
     {"shots":1,"count":0,"name":"Every time Force mispronounces a word"},
     {"shots":1,"count":0,"name":"Every time something gets fucked up on OBS"},
     {"shots":1,"count":0,"name":"Every time TheRedCoyote professes his love for Hunter"},
